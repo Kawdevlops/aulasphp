@@ -46,5 +46,8 @@ $filmes = [
     <pre> <?= var_dump($raças)?> </pre>
 
     </div>
+
+
+    <?php include "redes-socias.html"?>
 </body>
 </html>
