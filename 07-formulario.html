@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Formulário HTML</h1>
+    <hr>
+
+    <form autocomplete="off" method="post" action="">
+        <form autocomplete="off" method="post" action="">
+        <!-- `autocomplete="off"` desativa o preenchimento automático pelo navegador -->
+        <!-- `method="post"` define o envio de dados via POST (não visível na URL) -->
+        <!-- `action=""` define que os dados serão enviados para a mesma página -->
+
+        <p>
+            <!-- Campo para o nome do usuário -->
+            <label for="nome">Nome:</label>
+            <input placeholder="Digite o nome" type="text" name="nome" id="nome">
+            <!-- `required` torna o preenchimento obrigatório -->
+            <!-- `type="text"` define um campo de texto simples -->
+            <!-- `name="nome"` define o nome da variável que receberá o valor no backend -->
+            <!-- `id="nome"` associa o campo ao label acima, melhorando acessibilidade -->
+        </p>
+        
+        <p>
+            <!-- Campo para o e-mail do usuário -->
+            <label for="email">E-mail:</label>
+            <input required type="email" name="email" id="email">
+            <!-- `type="email"` cria uma validação para garantir que o valor inserido é um e-mail válido -->
+        </p>
+        <p>
+            <!-- Campo para a data de nascimento -->
+            <label for="nascimento">Data de nascimento:</label>
+            <input type="date" name="nascimento" id="nascimento">
+            <!-- `type="date"` exibe um seletor de data, compatível com navegadores modernos -->
+        </p>
+
+        <p>
+            <!-- Campo para uma mensagem ou comentário -->
+            <label for="mensagem">Mensagem:</label><br>
+            <textarea name="mensagem" id="mensagem" cols="30" rows="6"></textarea>
+            <!-- `textarea` permite a inserção de um texto maior, com múltiplas linhas -->
+            <!-- `cols` e `rows` definem o tamanho inicial da caixa de texto -->
+        </p>
+
+         <!-- Botão para enviar o formulário -->
+    <button type="submit" name="enviar">Enviar dados</button>
+    <!-- `type="submit"` envia o formulário quando clicado -->
+    <!-- `name="enviar"` permite identificar que o botão foi clicado -->
+</form>
+
+
+</body>
+</html>
